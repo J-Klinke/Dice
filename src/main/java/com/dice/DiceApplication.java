@@ -1,4 +1,4 @@
-package com.dices;
+package com.dice;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,10 +7,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class DicesApplication extends Application {
+public class DiceApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(DicesApplication.class.getResource("dicesGUI.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(DiceApplication.class.getResource("diceGUI.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Dices");
         stage.setScene(scene);

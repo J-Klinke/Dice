@@ -1,10 +1,10 @@
-package com.dices;
+package com.dice;
 
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
-public class DicesController {
+public class DiceController {
 
     @FXML
     public Text textW4 = new Text();
@@ -21,32 +21,35 @@ public class DicesController {
 
     @FXML
     void rollW4(MouseEvent event) {
-        Dices.getResult(4, textW4);
+        Dice.getResult(4, textW4);
     }
 
     @FXML
     void rollW6(MouseEvent event) {
-        Dices.getResult(6, textW6);
+        Dice.getResult(6, textW6);
     }
 
     @FXML
     void rollW8(MouseEvent event) {
-        Dices.getResult(8, textW8);
+        Dice.getResult(8, textW8);
     }
     @FXML
     void rollW12(MouseEvent event) {
-        Dices.getResult(12, textW12);
+        Dice.getResult(12, textW12);
     }
 
     @FXML
     void rollW20(MouseEvent event) {
-        Dices.getResult(20, textW20);
+        Dice.getResult(20, textW20);
     }
 
     @FXML
     void rollW100(MouseEvent event) {
-        Dices.getResult(100, textW100);
+        Dice.getResult(100, textW100);
     }
 
-
+    @FXML
+    void initialize() {
+        textW4.setStyle("fx-border: black");
+    }
 }

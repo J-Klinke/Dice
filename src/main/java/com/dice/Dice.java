@@ -1,10 +1,10 @@
-package com.dices;
+package com.dice;
 
 import javafx.scene.text.Text;
 
 import java.util.Random;
 
-public class Dices {
+public class Dice {
     static Random random = new Random();
 
     private static int rollDice(int sides) {

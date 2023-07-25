@@ -7,6 +7,6 @@ module com.example.dices {
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
 
-    opens com.dices to javafx.fxml;
-    exports com.dices;
+    opens com.dice to javafx.fxml;
+    exports com.dice;
 }
