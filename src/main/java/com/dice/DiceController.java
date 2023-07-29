@@ -47,9 +47,4 @@ public class DiceController {
     void rollW100(MouseEvent event) {
         Dice.getResult(100, textW100);
     }
-
-    @FXML
-    void initialize() {
-        textW4.setStyle("fx-border: black");
-    }
 }
