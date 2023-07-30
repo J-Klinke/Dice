@@ -12,7 +12,7 @@ public class DiceApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(DiceApplication.class.getResource("diceGUI.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Dices");
+        stage.setTitle("Dice");
         stage.setScene(scene);
         stage.show();
     }
