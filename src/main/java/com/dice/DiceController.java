@@ -1,6 +1,8 @@
 package com.dice;
 
 import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 
@@ -53,11 +55,11 @@ public class DiceController{
 
     @FXML
     void reset() {
-        textW4.setText("");
-        textW8.setText("");
-        textW6.setText("");
-        textW12.setText("");
-        textW20.setText("");
-        textW100.setText("");
+        for (Node n: grid.getChildren()) {
+            if (n instanceof AnchorPane) {
+                Node x = ((AnchorPane) n).getChildren().get(0);
+                ((Text) x).setText("");
+            }
+        }
     }
 }
